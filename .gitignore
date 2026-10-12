@@ -1,0 +1,58 @@
+# ============================================================
+# RepoSnipy-Web
+# 大文件（运行时、模型、索引）不进仓库，见 README 的「获取数据与模型」
+# ============================================================
+
+# --- 运行时与依赖：体积大，且与本机架构/路径绑定 ---
+.venv/
+Python310/
+models/
+data/
+frontend/node_modules/
+frontend/dist/
+
+# --- Python 缓存与构建产物 ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.cache/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# --- 日志与临时文件 ---
+*.log
+logs/
+*.tmp
+*.bak
+*.swp
+*.orig
+*.rej
+
+# --- 编辑器 / 操作系统 ---
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+Thumbs.db
+desktop.ini
+__MACOSX/
+
+# --- 本地配置与敏感信息（不要提交 GitHub Token）---
+.env
+.env.*
+!.env.example
+secrets.json
+*.token
+
+# --- uv / npm / pip 的本地缓存目录 ---
+_uv-cache/
+_npm-cache/
+_pip-cache/
+
+# --- 脚手架残留的无用素材（本地可留，但不入库）---
+frontend/src/assets/hero.png

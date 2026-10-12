@@ -1,0 +1,24 @@
+# 这个项目的依赖已经随文件夹一起打包在 .venv 里，开箱即可运行，
+# 本文件只在需要重建环境时使用。
+#
+# 重建方式（需要联网）：
+#   Python310\cpython-3.10-windows-x86_64-none\python.exe -m venv .venv
+#   .venv\Scripts\python.exe -m pip install -r requirements.txt
+
+# --- 后端服务 ---
+fastapi==0.141.1
+uvicorn[standard]==0.53.0
+
+# --- 检索与向量 ---
+numpy==1.26.4
+scipy==1.11.4
+docarray==0.40.0
+
+# --- 模型推理 ---
+torch==2.2.2
+transformers==4.46.3
+accelerate==0.34.2
+
+# --- 抓取 GitHub 仓库 ---
+requests
+tqdm==4.66.5

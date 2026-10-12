@@ -1,0 +1,31 @@
+# 统一换行符，避免跨机器协作时文件格式被改坏
+* text=auto
+
+# Windows 批处理必须是 CRLF：用 LF 保存会让 cmd 拆错行，
+# 表现为一堆「不是内部或外部命令」、环境变量失效
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 其余源码统一 LF
+*.py   text eol=lf
+*.js   text eol=lf
+*.vue  text eol=lf
+*.css  text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+*.toml text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+
+# 二进制文件不要做换行转换
+*.bin  binary
+*.pkl  binary
+*.pt   binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.zip  binary
